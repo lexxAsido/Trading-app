@@ -39,14 +39,14 @@ const Orderbooks = () => {
 
   return (
     <View style={styles.container}>
-      
+
       <FlatList
         data={orderbook}
         keyExtractor={(item) => item.key}
         renderItem={({ item, index }) => (
           <View style={styles.row}>
-            <Text style={{color: "#FF5252", fontWeight: "bold",}}>{item.price}</Text>
-            <Text style={{color: "#00C49A",}}>{item.amount}</Text>
+            <Text style={{ color: "#FF5252", fontWeight: "bold", }}>{item.price}</Text>
+            <Text style={{ color: "#00C49A", }}>{item.amount}</Text>
           </View>
         )}
       />
@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 10,
     backgroundColor: "#f8f9fa",
-    marginBottom:40
+    marginBottom: 40
   },
   header: {
     fontSize: 20,

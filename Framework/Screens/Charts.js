@@ -30,9 +30,9 @@ const Charts = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-     
 
-      {/* Candlestick Chart */}
+
+
       <Svg style={styles.chartContainer}>
         <Svg width={width} height={height}>
           {chartData.map((candle, index) => {
@@ -66,7 +66,7 @@ const Charts = () => {
         </Svg>
       </Svg>
 
-      {/* Tabs Section */}
+
       <View style={styles.tabs}>
         <Text style={styles.tab}>Charts</Text>
         <Text style={[styles.tab, styles.inactiveTab]}>Orderbook</Text>

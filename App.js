@@ -1,14 +1,5 @@
 import React, { useState } from "react";
-import {
-  View,
-  Text,
-  StyleSheet,
-  ScrollView,
-  SafeAreaView,
-  TouchableOpacity,
-  Modal,
-  TextInput,
-} from "react-native";
+import { View, Text, StyleSheet, ScrollView, SafeAreaView, TouchableOpacity, Modal, TextInput, } from "react-native";
 import Charts from "./Framework/Screens/Charts";
 import Orderbook from "./Framework/Screens/Orderbooks";
 import RecentTrades from "./Framework/Screens/RecentTrades";
@@ -25,11 +16,11 @@ export default function App() {
   const [isChecked, setIsChecked] = useState(false);
   return (
     <View style={styles.container}>
-      
+
       <ScrollView contentContainerStyle={styles.scrollContainer}>
         <Header />
         <Trade />
-    
+
         <View>
           <View style={{ alignItems: "center", paddingVertical: 13, borderTopWidth: 1, borderColor: "#ffffff", backgroundColor: "#f4f4f4", marginTop: 20, flexDirection: "row", justifyContent: "space-evenly" }}>
             <Text style={{ fontSize: 18, fontWeight: "500", color: "#131212", backgroundColor: "#ffffff", paddingVertical: 7, paddingHorizontal: 15, borderRadius: 10, elevation: 10 }}>Open Order</Text>
@@ -59,7 +50,7 @@ export default function App() {
         </View>
 
 
-    
+
         <Modal visible={modalVisible} animationType="slide" transparent={true}>
           <View style={styles.modalContainer}>
             <View style={styles.modalContent}>
@@ -131,13 +122,13 @@ export default function App() {
 
               <View style={{ flexDirection: "column", gap: 15, marginBottom: 10 }}>
                 <TextInput
-                  style={{ borderWidth: 2, borderRadius: 10, borderColor: "#f1f1f1",paddingVertical:10 }}
+                  style={{ borderWidth: 2, borderRadius: 10, borderColor: "#f1f1f1", paddingVertical: 10 }}
                   placeholder="Limit Price                                                   0.00USD" />
                 <TextInput
-                  style={{ borderWidth: 2, borderRadius: 10, borderColor: "#f1f1f1", paddingVertical:10 }}
+                  style={{ borderWidth: 2, borderRadius: 10, borderColor: "#f1f1f1", paddingVertical: 10 }}
                   placeholder="Amount                                                        0.00USD" />
                 <TextInput
-                  style={{ borderWidth: 2, borderRadius: 10, borderColor: "#f1f1f1", paddingVertical:10 }}
+                  style={{ borderWidth: 2, borderRadius: 10, borderColor: "#f1f1f1", paddingVertical: 10 }}
                   placeholder="Type                                         Good Till Cancelled" />
 
 
@@ -218,7 +209,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
   },
   scrollContainer: {
-    paddingBottom: 10, 
+    paddingBottom: 10,
   },
   openDoorsContainer: {
     alignItems: "center",
